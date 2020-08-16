@@ -1,0 +1,296 @@
+<!doctype html>
+<html>
+    <!-- InstanceBegin template="/Templates/page-full-width.dwt" codeOutsideHTMLIsLocked="false" -->
+
+    <head>
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="description" content="The platform dedicated to professional Counter-Strike 1.6 players" />
+        <meta name="keywords" content="Counter-Strike 1.6, demos, replays, tournaments, competitions">
+        <meta name="author" content="swampstorm">
+
+        <!-- InstanceBeginEditable name="doctitle" -->
+        <title>swampstorm - The platform dedicated to professional Counter-Strike 1.6 players</title>
+        <!-- InstanceEndEditable -->
+
+        <!-- FAV and TOUCH ICONS -->
+        <link rel="shortcut icon" href="images/favicon.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/logo-144.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/logo-114.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/logo-72.png">
+        <link rel="apple-touch-icon-precomposed" href="images/ico/logo-57.png">
+
+        <!-- FONTS -->
+        <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=UnifrakturMaguntia' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Coustard' rel='stylesheet' type='text/css'>
+
+        <!--[if lte IE 9]>
+            <script src="js/html5shiv.js"></script>
+            <script src="js/selectivizr-min.js"></script>
+        <![endif]-->
+
+        <!-- STYLES -->
+        <link rel="stylesheet" type="text/css" media="print" href="css/print.css">
+        <link rel="stylesheet" type="text/css" href="css/grid.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+        <link rel="stylesheet" type="text/css" href="js/google-code-prettify/prettify.css">
+        <link rel="stylesheet" type="text/css" href="css/uniform.default.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="css/flexslider.css">
+
+        <!-- SCRIPTS -->
+        <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script>
+            window.jQuery || document.write('<script src="js/jquery-1.8.3.min.js"><\/script>')
+        </script>
+
+        <!-- InstanceBeginEditable name="head" -->
+        <!-- InstanceEndEditable -->
+
+        <style>
+            @media screen and (max-width: 767px) {
+                h1.site-title img {
+                    max-height: 60px;
+                }
+            }
+            html,
+            body {
+                height: 100%;
+                margin: 0px;
+                color: #444;
+            }
+            body {
+                white-space: nowrap;
+                overflow-x: scroll !important;
+            }
+            table {
+                clear: both;
+                margin-bottom: 110px;
+            }
+            table tr td {
+                padding: 10px;
+            }
+            table tr td a img {
+                width: 20px;
+                height: 20px;
+                vertical-align: top;
+            }
+            td: nth-child(1) {
+                min-width: 150px;
+            }
+            td: nth-child(2) {
+                min-width: 150px;
+            }
+        </style>
+    </head>
+
+
+    <body>
+
+        <!-- #PAGE -->
+        <div id="page" class="hfeed site">
+
+            <!-- .site-header -->
+            <header class="site-header wrapper" role="banner">
+
+                <!-- .row -->
+                <div class="row">
+
+
+
+                </div>
+                <!-- .row -->
+
+            </header>
+            <!-- .site-header -->
+
+
+            <!-- #main -->
+            <section id="main" class="middle wrapper">
+                <div class="row row-fluid">
+
+                    <!-- #primary -->
+                    <div id="primary" class="site-content">
+
+                        <!-- #content -->
+                        <div id="content" role="main">
+
+
+                            <!-- InstanceBeginEditable name="Middle-Content" -->
+
+                            <!-- .row -->
+                            <div class="readable-content row-fluid page">
+
+                                <div id="ladders"></div>
+
+                            </div>
+                            <!-- .row -->
+
+
+                            <!-- InstanceEndEditable -->
+
+
+                        </div>
+                        <!-- #content -->
+
+                    </div>
+                    <!-- #primary -->
+
+
+
+
+
+                </div>
+            </section>
+            <!-- #main -->
+
+
+
+
+
+        </div>
+        <!-- #PAGE -->
+
+
+
+
+        <!-- SCRIPTS -->
+        <script src="js/detectmobilebrowser.js"></script>
+        <script src="js/modernizr.js"></script>
+        <script src="js/jquery.imagesloaded.min.js"></script>
+        <script src="js/jquery.fitvids.js"></script>
+        <script src="js/google-code-prettify/prettify.js"></script>
+        <script src="js/jquery.uniform.min.js"></script>
+
+        <!-- InstanceBeginEditable name="body-end" -->
+        <script src="js/jquery.isotope.min.js"></script>
+        <script src="js/jquery.flexslider-min.js"></script>
+        <script src="js/mediaelement/mediaelement-and-player.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="js/mediaelement/mediaelementplayer.css">
+        <!-- InstanceEndEditable -->
+
+        <script src="js/main.js"></script>
+
+        <script src="js/teams.js"></script>
+        <script src="js/tournaments.js"></script>
+        <script src="js/swampstorm-generic.js"></script>
+        <script>
+            (function () {
+                var event = getUrlVars()["event"];
+                var laddersJson = getLaddersByEvent(event);
+                var laddersContainer = document.getElementById("ladders");
+                for (var currentLadderIndex = 0; currentLadderIndex < laddersJson.length; currentLadderIndex++) {
+                    var ladderTitle = document.createElement("h3");
+                    ladderTitle.appendChild(
+                            document.createTextNode(laddersJson[currentLadderIndex].title)
+                            );
+
+                    var roundsTable = document.createElement("table");
+                    var roundsTableBody = document.createElement("tbody");
+                    var roundsTableHeaderRow = document.createElement("tr");
+                    var roundsTableTeamHeading = document.createElement("th");
+                    roundsTableTeamHeading.appendChild(
+                            document.createTextNode("Team")
+                            );
+                    var roundsTableOpponentHeading = document.createElement("th");
+                    roundsTableOpponentHeading.appendChild(
+                            document.createTextNode("Opponent")
+                            );
+                    var roundsTableScoreHeading = document.createElement("th");
+                    roundsTableScoreHeading.appendChild(
+                            document.createTextNode("Score")
+                            );
+                    var roundsTableMapHeading = document.createElement("th");
+                    roundsTableMapHeading.appendChild(
+                            document.createTextNode("Map")
+                            );
+                    var roundsTableDemoHeading = document.createElement("th");
+                    roundsTableDemoHeading.appendChild(
+                            document.createTextNode("Demo")
+                            );
+
+                    roundsTableHeaderRow.appendChild(roundsTableTeamHeading);
+                    roundsTableHeaderRow.appendChild(roundsTableOpponentHeading);
+                    roundsTableHeaderRow.appendChild(roundsTableScoreHeading);
+                    roundsTableHeaderRow.appendChild(roundsTableMapHeading);
+                    roundsTableHeaderRow.appendChild(roundsTableDemoHeading);
+
+                    roundsTableBody.appendChild(roundsTableHeaderRow);
+
+                    roundsTable.appendChild(roundsTableBody);
+
+                    for (var currentRoundIndex = 0; currentRoundIndex < laddersJson[currentLadderIndex].rounds.length; currentRoundIndex++) {
+                        var team = laddersJson[currentLadderIndex].rounds[currentRoundIndex].team;
+                        var opponent = laddersJson[currentLadderIndex].rounds[currentRoundIndex].opponent;
+                        var teamScore = laddersJson[currentLadderIndex].rounds[currentRoundIndex].teamScore;
+                        var opponentScore = laddersJson[currentLadderIndex].rounds[currentRoundIndex].opponentScore;
+                        var map = laddersJson[currentLadderIndex].rounds[currentRoundIndex].map;
+
+                        var row = document.createElement("tr");
+
+                        var teamCell = document.createElement("td");
+                        var teamCellImg = document.createElement("img");
+                        teamCellImg.style.width = "30px";
+                        teamCellImg.style.height = "31px";
+                        teamCellImg.alt = getTeamCountry(team);
+                        teamCellImg.src = "tournaments" + "/" + event + "/" + "images" + "/" + toUrlParam(team) + ".png";
+                        teamCell.appendChild(teamCellImg);
+                        teamCell.appendChild(
+                                document.createTextNode(" " + team)
+                                );
+                        row.appendChild(teamCell);
+
+                        var opponentCell = document.createElement("td");
+                        var opponentCellImg = document.createElement("img");
+                        opponentCellImg.style.width = "30px";
+                        opponentCellImg.style.height = "31px";
+                        opponentCellImg.alt = getTeamCountry(opponent);
+                        opponentCellImg.src = "tournaments" + "/" + event + "/" + "images" + "/" + toUrlParam(opponent) + ".png";
+                        opponentCell.appendChild(opponentCellImg);
+                        opponentCell.appendChild(
+                                document.createTextNode(" " + opponent)
+                                );
+                        row.appendChild(opponentCell);
+
+                        var teamScoreCell = document.createElement("td");
+                        teamScoreCell.appendChild(
+                                document.createTextNode(" " + teamScore + " - " + opponentScore)
+                                );
+                        row.appendChild(teamScoreCell);
+
+                        var mapCell = document.createElement("td");
+                        mapCell.appendChild(
+                                document.createTextNode(" " + map)
+                                );
+                        row.appendChild(mapCell);
+
+                        var demoCell = document.createElement("td");
+                        var demoAnchor = document.createElement("a");
+                        demoAnchor.href = "tournaments" + "/" + event + "/" + "demos" + "/" + toUrlParam(team) + "-vs-" + toUrlParam(opponent) + "-" + map + "-" + teamScore + "-" + opponentScore + ".zip";
+                        var demoImg = document.createElement("img");
+                        demoImg.src = "images" + "/" + "download.svg";
+                        demoAnchor.appendChild(demoImg);
+                        demoAnchor.appendChild(
+                                document.createTextNode(" " + "Download")
+                                );
+                        demoCell.appendChild(demoAnchor);
+                        row.appendChild(demoCell);
+
+                        roundsTable.appendChild(row);
+                    }
+                    laddersContainer.appendChild(ladderTitle);
+                    laddersContainer.appendChild(roundsTable);
+                }
+            })();
+        </script>
+
+    </body>
+    <!-- InstanceEnd -->
+
+</html>
